@@ -1,46 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="en"> <!-- idioma -->
+    <head> <!-- INICIA -->
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>web</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="scripts/script.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- COMPATIBLE CON INTERNET EXPLORER -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para expandir con los dos dedos -->
+        <title>web</title> <!-- Nombre arriba pagina -->
+        <link rel="stylesheet" href="css/style.css"> <!-- css -->
+        <script src="scripts/script.js"></script> <!-- java script -->
     
-    </head>
+    </head> <!--CIERRA -->
+    <!-- CODE -->
+    <!-- header, section, footer -->
     <body>
-        <header>
-            <div class="encabezado">
+        <header> <!-- header: parte gris -->
+            <div class="encabezado"> <!-- identificar elemento, se heredan elementos de esta clase -->
+                <!-- se divide en dos más -->
+                <!-- parte izquierda -->
                 <div class="logobienvenida">
+                    <!-- se divide en dos partes -->
+                    <!-- parte 1. -->
                     <div class="logo">
-                        <img src="assets/woolf.png" alt="">
+                        <img src="imagenes/woolf.png" alt="">
                     </div>
-
+                    <!-- parte 2, texto -->
                     <div>
                         <h2>blog equipo 17 </h2>
                         <p>estilo</p>
                         <p>AAA</p>
                     </div>
                 </div>
-
-
+                <!-- parte derecha -->
                 <div class="publicar">
+                    <!-- dos más -->
                     <div class="boton publicar">
-                        <p> <span> pluma</span>publicar</p>
+                        <p> <span> pluma</span>publicar</p> <!-- boton texto -->
                     </div>
 
 
                     <div class="avatar">
-                        <img src="assets/avatar.png" alt="">
+                        <img src="imagenes/avatar.png" alt="">
                         <p> flechita abajo</p>
                         </div>
-                    </div>
-            </div>
+                </div>
+            </div>    
+            <nav> <!-- barra de navegación -->
 
-            <nav>
-                <ul>
-                    <li>html 5</li>
+                <ul> <!-- lista. -->
+                    <li>html 5</li> <!-- elemento lista -->
                     <li>css 3</li>
                     <li>javaScript</li>
                     <li>python</li>
@@ -48,22 +54,54 @@
                 </ul>
             </nav>
 
-        </header>
+        </header> <!-- cierra header -->
 
 
-
+        <!-- section, estructurar una cajita  -->
         <section>
-
+            <article> <!-- informacion puntual o separada -->
+                <!-- se divide en dos -->
+                <!-- primera "arriba"  -->
+                <!-- imagen y texto-->
+                <div class="post">
+                <div class="imagen-tarjeta">
+                <!-- se divide en dos div -->
+                    <img src="" alt="">
+                </div>
+                <div class="contenido">
+                    <div class="titulo-autor">
+                        <h3> Titulo del post</h3>
+                        <p>por <span>autor</span></p>
+                    </div>
+                    <div class="tag-tiempo"></div>
+                        <div class="tag">
+                            <p>tag</p>
+                        </div>
+                        <div class="tiempo">
+                            <p>hace <span> 10 min</span></p>
+                        </div>
+                </div>
+                <!-- segunda "inferior" -->
+                <div class="estadisticas">
+                    <!-- se divide en dos -->
+                    <div class="contador"></div>
+                        <p> <span>flecha arriba</span> numero <span>flecha abajo</span></p> <!-- class para usarlo en css -->
+                    <div class="iconitos">
+                        <p>numero <span>estrellita</span></p> <!-- para css -->
+                    </div>                    
+                </div>
+            </article>
         </section>
 
-
+        <!-- footer -->
         <footer>
-            <p>
+            <p> <!-- parrafos -->
                 pagina web realizada en clase
-                <span>
+                <span> <!-- sobresaltar parte del parrafo -->
                     por el grupo 17
                 </span>
             </p>
-        </footer>
-    </body>
+        </footer> <!-- cierra footer -->
+    </body> <!-- cierra body -->
     </html>
+
