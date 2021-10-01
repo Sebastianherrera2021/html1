@@ -1,3 +1,76 @@
-*{
-    background-color: brown; 
+/* asterisco selector universal*/
+/**{
+    background-color: brown;  
+    }*/
+/*FOOTER 6-27*/
+body {
+font-family: Arial, Helvetica, sans-serif ;
+
+}
+    footer{  
+    background: #dd4f24;  
+    padding: 20px 0px 20px 0px; /*tamaño color, arriba, derecha, abajo, izquierda*/
+    text-align: center;
     }
+
+footer p {
+    color: white;
+    display: grid; /*arriba y abajo, grid*/
+}
+/*pseudoclases: identificar cosas*/
+footer p span:before {
+    content: " - " ;
+}
+
+footer p span:after {
+    content: " - " ;
+}
+
+/*HEADER 29-*/
+header {
+    background: #444 ;
+    color: white; /*pone todo el resto en blanco "hasta lo de la lista*/
+
+}
+
+header .logo img, header .avatar img{ 
+    width: 80px;
+}
+
+header .encabezado h2 {
+    color: white;
+    font-size: 20px ;
+}
+/*
+header .encabezado .estilo {
+    color: #22bce0;
+}*/
+
+header .encabezado .logobienvenida p { /*solo dos*/
+    color: #22bce0;
+}
+
+header .encabezado .logobienvenida .tamaño {
+    color: #dd4f24;
+}
+
+/*listas*/
+header nav {
+    background: #22bce0;
+}
+
+header nav ul {
+    list-style: none; /*quitar estilo de la lista "puntos*/
+    padding: 0px; /*para agrandar*/
+    display: flex;
+    padding: 8px 0px 8px 0px;
+}
+header nav ul li{
+    margin-left: 30px; /*para margenes*/
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none; /*quitar subrayado"*/
+}
+
+/*1:01:30*/
