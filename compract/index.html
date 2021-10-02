@@ -11,43 +11,43 @@
 <body>
     <section> 
         <h1>Registro para vacunación COVID-19</h1>
-        <form action="#" method="get">
-            <label for="inp">Nombre: </label>  <!-- ! "relacionar label con input" -->
-            <input type="text" name="nombre" id="inp" >
+        <form action="#" method="get">  <!-- ! "metodo get o post, 1-uri,recuperacion documentos,vulnerable,visto por cualquier persona, hasta 2000 caracteres, 2- cuerpo, actualizacion datos, seguro, haste 8mb" -->
+            <label for="inp">Nombre: </label>  <!-- ! "etiqueta label" -->
+            <input type="text" name="nombre" id="inp" > <!-- ! "relacionar label con input" -->
         
-            <br>  <!-- ! "salto de linea" -->
+            <br>  <!-- ! "salto de linea, para que no sea pegado sino abajo" -->
 
 
-            <label for="">Usuario: </label>
-            <input type="text" name="Usuario" >
+            <label for="inp2">Usuario: </label>
+            <input type="text" name="Usuario" id="inp2" >
             
             <br>
 
             <label for="">Sexo: </label>
             <input type="radio" name="Sexo" >Masculino
             <input type="radio" name="Sexo" >Femenino
+            
+            <br>
+
+            <label for="inp4">Correo: </label>
+            <input type="email" name="Correo" id="inp4">
 
             <br>
 
-            <label for="">Correo: </label>
-            <input type="email" name="Correo" >
+            <label for="inp5">Password: </label>
+            <input type="password" name="password" id="inp5" >
 
             <br>
 
-            <label for="">Password: </label>
-            <input type="password" name="password" >
-
-            <br>
-
-            <input type="checkbox" name="autorizacion">
-            <label for="">"Declaro haber leído y aceptar las
+            <input type="checkbox" name="autorizacion" id="inp6">
+            <label for="inp6">"Declaro haber leído y aceptar las
                 condiciones generales del programa y la normativa sobre protección de datos".
                 </label>
 
             <br> <!-- ! " se deberia hacer por css" -->
 
 
-            <input type="submit" value="envie">
+            <input type="submit" value="enviar">
         </form> 
     </section>
 </body>
