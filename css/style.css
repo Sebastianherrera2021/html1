@@ -4,11 +4,11 @@
     }*/
 /*FOOTER 6-27*/
 body {
-font-family: Arial, Helvetica, sans-serif ;
+font-family: Arial, Helvetica, sans-serif ; /*tipo letra*/
 
 }
     footer{  
-    background: #dd4f24;  
+    background: #dd4f24;  /*fondo*/
     padding: 20px 0px 20px 0px; /*tamaño color, arriba, derecha, abajo, izquierda*/
     text-align: center;
     }
@@ -17,28 +17,28 @@ footer p {
     color: white;
     display: grid; /*arriba y abajo, grid*/
 }
-/*pseudoclases: identificar cosas*/
-footer p span:before {
+/*pseudoselectores: identificar cosas*/
+footer p span:before { /*insertan contenido, mediante CSS, delante ( before ).*/
     content: " - " ;
 }
 
-footer p span:after {
+footer p span:after {  /*insertan contenido detrás ( after ) del contenido de un elemento html*/
     content: " - " ;
 }
 
-/*HEADER 29-*/
+/*HEADER 29*/
 header {
     background: #444 ;
     color: white; /*pone todo el resto en blanco "hasta lo de la lista*/
 
 }
 
-header .logo img, header .avatar img{ 
+header .logo img, header .avatar img{ /*tamaño imagenes*/
     width: 80px;
 }
 
 header .encabezado h2 {
-    color: white;
+    color: white; /*color letras */
     font-size: 20px ;
 }
 /*
@@ -61,12 +61,12 @@ header nav {
 
 header nav ul {
     list-style: none; /*quitar estilo de la lista "puntos*/
-    padding: 0px; /*para agrandar*/
-    display: flex;
+    display: flex; /*poner una al lado del otro*/
     padding: 8px 0px 8px 0px;
+
 }
 header nav ul li{
-    margin-left: 30px; /*para margenes*/
+    margin-left: 230px; /*para espacio entre cada elemento de la lista*/
 }
 header nav ul li a {
     color: white;
@@ -74,3 +74,14 @@ header nav ul li a {
 }
 
 /*1:01:30*/
+
+header nav ul li a:hover{
+    background: rgba(0,0,0,0.1); /*para que en la lista se vea sombra*/
+    padding: 8px 2px 8px 2px;
+
+}
+
+/*organizar ubicación cosas*/
+header .encabezado .logobienvenida{
+    display: flex; /*para que queden todos de lado*/
+}
