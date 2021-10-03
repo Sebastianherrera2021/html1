@@ -63,7 +63,7 @@ header nav ul {
     list-style: none; /*quitar estilo de la lista "puntos*/
     display: flex; /*poner una al lado del otro*/
     padding: 8px 0px 8px 0px;
-
+    margin: 0px;
 }
 header nav ul li{
     margin-left: 230px; /*para espacio entre cada elemento de la lista*/
@@ -82,6 +82,33 @@ header nav ul li a:hover{
 }
 
 /*organizar ubicación cosas*/
-header .encabezado .logobienvenida{
+header .encabezado .logobienvenida, header .encabezado .publicar, header .encabezado .publicar .avatar{
     display: flex; /*para que queden todos de lado*/
+}
+
+header .encabezado{  /*padre*/
+    overflow: hidden;
+}
+
+header .encabezado .logobienvenida{ 
+    float: left;
+}
+
+header .encabezado .publicar{
+    float: right;
+}
+
+header .encabezado .logobienvenida h2, header .encabezado .logobienvenida p {
+    margin: 0px 0px 5px 0px;
+    padding: 0;
+}
+
+header .encabezado .logobienvenida div {
+    margin: 5px 0px 5px 20px;
+}
+
+/*barrita azul*/
+header .encabezado .logobienvenida .logo {
+    border-right: 1px solid #22bce0; /*grosor,solido,color*/
+    padding: 15px;
 }
