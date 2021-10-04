@@ -3,6 +3,20 @@
     background-color: brown;  
     }*/
 /*FOOTER 6-27*/
+/*iconos*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?xjy5pb'); /*ruta relativa, servidor, trabaja desde directorio index*/
+    src:  url('../fonts/icomoon.eot?xjy5pb#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?xjy5pb') format('truetype'),
+      url('../fonts/icomoon.woff?xjy5pb') format('woff'),
+      url('../fonts/icomoon.svg?xjy5pb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  
 body {
 font-family: Arial, Helvetica, sans-serif ; /*tipo letra*/
 
@@ -30,7 +44,7 @@ footer p span:after {  /*insertan contenido detrás ( after ) del contenido de u
 header {
     background: #444 ;
     color: white; /*pone todo el resto en blanco "hasta lo de la lista*/
-
+    display: grid; /*sombra*/
 }
 
 header .logo img, header .avatar img{ /*tamaño imagenes*/
@@ -88,6 +102,10 @@ header .encabezado .logobienvenida, header .encabezado .publicar, header .encabe
 
 header .encabezado{  /*padre*/
     overflow: hidden;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.28); /*todo esto es sombra, generador de sombra ss*/
+    -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.28);
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.28);
+    z-index: 2;
 }
 
 header .encabezado .logobienvenida{ 
@@ -100,7 +118,7 @@ header .encabezado .publicar{
 
 header .encabezado .logobienvenida h2, header .encabezado .logobienvenida p {
     margin: 0px 0px 5px 0px;
-    padding: 0;
+    padding: 0px;
 }
 
 header .encabezado .logobienvenida div {
@@ -110,5 +128,45 @@ header .encabezado .logobienvenida div {
 /*barrita azul*/
 header .encabezado .logobienvenida .logo {
     border-right: 1px solid #22bce0; /*grosor,solido,color*/
-    padding: 15px;
+    padding-right: 15px;
+}/*icommon up: flechita, fuente, desabilitar uso rapido*/ /*abrir css "comprimido" con visual para extraer codigo de iconos*/
+
+header .encabezado .publicar p {
+    background: #dd4f24 ;
+    padding: 5px 5px 5px 5px;
 }
+
+header .encabezado .publicar .avatar p {
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg); 
+
+}
+
+header .encabezado .publicar .pluma:before {
+    font-family: 'icomoon';
+    content: "\e908";
+}
+
+header .encabezado .publicar .avatar p:before {
+    font-family: 'icomoon';
+    content: "\ea1c";  
+}
+
+section {
+    background: #e8e8e8;
+}
+
+section article{
+    background: white;
+    border: 1px solid black;
+    width: 48%; /*mitad de la pantalla*/
+}
+
+section article .post  {
+    border-bottom: 2px solid #22bce0;
+}
+
+section article .post img {
+    width: 150px;
+}
+
